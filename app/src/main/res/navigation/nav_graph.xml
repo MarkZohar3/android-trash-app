@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label=" "
+    app:startDestination="@id/mapFragment">
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.trashtagchallenge.fragment.ProfileFragment"
+        android:label="My profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.example.trashtagchallenge.fragment.StatsFragment"
+        android:label="Statistics"
+        tools:layout="@layout/fragment_stats" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.trashtagchallenge.fragment.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_addTrashFragment"
+            app:destination="@id/addSpottedTrashFragment" >
+        </action>
+        <action
+            android:id="@+id/action_mapFragment_to_addCleanedTrashFragment"
+            app:destination="@id/addCleanedTrashFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_trashFragment"
+            app:destination="@id/trashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSpottedTrashFragment"
+        android:name="com.example.trashtagchallenge.fragment.AddSpottedTrashFragment"
+        android:label="Add Trash"
+        tools:layout="@layout/fragment_add_trash" >
+        <action
+            android:id="@+id/action_addTrashFragment_to_mapFragment"
+            app:destination="@id/mapFragment" >
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/addCleanedTrashFragment"
+        android:name="com.example.trashtagchallenge.fragment.AddCleanedTrashFragment"
+        android:label="Spotted Trash"
+        tools:layout="@layout/fragment_add_cleaned_trash" >
+        <action
+            android:id="@+id/action_addCleanedTrashFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trashFragment"
+        android:name="com.example.trashtagchallenge.fragment.TrashFragment"
+        android:label="Trash"
+        tools:layout="@layout/fragment_trash">
+        <action
+            android:id="@+id/action_trashFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+</navigation>

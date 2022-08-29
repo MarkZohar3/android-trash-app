@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StatsFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="20dp"
+        android:gravity="top|right"
+        tools:text="Global Statistics"
+        android:id="@+id/text_global_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:gravity="top|left"
+            tools:text="Trash spots added today "
+            android:id="@+id/text_added_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_red_dark"
+            tools:text=" 0"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            android:id="@+id/text_added_today_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:gravity="top|left"
+            tools:text="Trash spots added this week:"
+            android:id="@+id/text_added_this_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            tools:text=" 0"
+            android:id="@+id/text_added_this_week_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:gravity="top|left"
+            tools:text="Trash spots cleaned today:"
+            android:id="@+id/text_cleaned_this_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            tools:text=" 0"
+            android:id="@+id/text_cleaned_this_day_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:gravity="top|left"
+            tools:text="Trash spots cleaned this week:"
+            android:id="@+id/text_cleaned_this_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="right"
+            android:layout_marginRight="5dp"
+            tools:text=" 0"
+            android:id="@+id/text_cleaned_this_week_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="20dp"
+        android:gravity="top|right"
+        tools:text="Leaderboard"
+        android:id="@+id/text_leaderboard"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_gravity="top"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="16dp"
+        android:text="No contributions..."
+        android:enabled="true"
+        android:id="@+id/listViewStats"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</FrameLayout>

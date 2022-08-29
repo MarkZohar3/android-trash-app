@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TrashTag Challenge</string>
+    <string name="google_maps_api_key">AIzaSyD8fTdZdgsymbN3rWqzwvaJD5lP5K9ULxI</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

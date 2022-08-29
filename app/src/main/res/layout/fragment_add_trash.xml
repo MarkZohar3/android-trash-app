@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddSpottedTrashFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="360dp"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/text_add_image"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_alignBaseline="@id/image_view"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Click to Add Picture"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/image_view_add_image"
+                android:background="@drawable/trash_photo_red"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="250dp"/>
+            <TextView
+                android:id="@+id/text_trashDescriptionMain"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Describe your contribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                tools:text="Description"
+                android:id="@+id/text_trashDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/text_typeMain"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Type of contribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:drawablePadding="16dp"
+                tools:text="Recorded"
+                android:id="@+id/text_type"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/text_dateMain"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Date added"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                tools:text="Date"
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/button_saveTrash"
+                android:layout_marginTop="15dp"
+                android:textColor="@android:color/white"
+                android:background="?colorPrimary"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:text="Save Trash"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

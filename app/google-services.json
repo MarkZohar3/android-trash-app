@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "243797185708",
+    "firebase_url": "https://diplomska-cb92a.firebaseio.com",
+    "project_id": "diplomska-cb92a",
+    "storage_bucket": "diplomska-cb92a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243797185708:android:c184a748ccae6a33",
+        "android_client_info": {
+          "package_name": "com.example.trashtagchallenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243797185708-2d4vjmm8fdmhv0rprg4baht877v777e6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trashtagchallenge",
+            "certificate_hash": "a1465932be208667342bb568043ecce9c38ac97f"
+          }
+        },
+        {
+          "client_id": "243797185708-nlkcp8q4mppk5a7gq89jshjutaqai9h6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXpPNbtxnFMBdAC11PbNRsDPNU6yCuATE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243797185708-nlkcp8q4mppk5a7gq89jshjutaqai9h6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
